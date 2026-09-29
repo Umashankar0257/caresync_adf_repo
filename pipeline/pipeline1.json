@@ -48,7 +48,11 @@
 				"outputs": [
 					{
 						"referenceName": "DS_ADLS_parquet",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"container": "q",
+							"folder": "q"
+						}
 					}
 				]
 			}
