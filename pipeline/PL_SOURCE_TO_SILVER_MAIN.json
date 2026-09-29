@@ -32,7 +32,7 @@
 				}
 			},
 			{
-				"name": "INGEST ALL TABLES",
+				"name": "Ingest all tables",
 				"type": "ForEach",
 				"dependsOn": [
 					{
@@ -45,7 +45,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Read_source_table_list').output",
+						"value": "@activity('Read_source_table_list').output.value",
 						"type": "Expression"
 					},
 					"activities": [
@@ -59,9 +59,9 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "test",
+								"variableName": "testing",
 								"value": {
-									"value": "@item().table_id",
+									"value": "@string(item().table_id)",
 									"type": "Expression"
 								}
 							}
@@ -81,6 +81,9 @@
 				"type": "String"
 			},
 			"test": {
+				"type": "String"
+			},
+			"testing": {
 				"type": "String"
 			}
 		},
