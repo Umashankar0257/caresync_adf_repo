@@ -77,9 +77,6 @@
 			}
 		},
 		"variables": {
-			"test": {
-				"type": "Integer"
-			},
 			"test1": {
 				"type": "Array"
 			}
