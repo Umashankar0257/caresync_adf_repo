@@ -78,7 +78,7 @@
 		},
 		"variables": {
 			"test": {
-				"type": "String"
+				"type": "Integer"
 			}
 		},
 		"annotations": []
