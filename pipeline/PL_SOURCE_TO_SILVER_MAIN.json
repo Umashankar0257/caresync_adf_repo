@@ -77,12 +77,6 @@
 			}
 		},
 		"variables": {
-			"test1": {
-				"type": "String"
-			},
-			"test": {
-				"type": "String"
-			},
 			"testing": {
 				"type": "String"
 			}
