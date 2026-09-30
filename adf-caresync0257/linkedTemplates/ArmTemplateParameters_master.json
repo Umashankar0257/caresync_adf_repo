@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-caresync0257"
+		},
+		"LS_ADLS_properties_typeProperties_url": {
+			"value": "https://caresyncproject0257.dfs.core.windows.net/"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "caresync0257-server.database.windows.net"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "sql-db-caresync"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "umashankarreddy2001"
+		},
+		"LS_PostgreSql1_properties_typeProperties_server": {
+			"value": "ep-broad-smoke-b3s188v5-pooler.c-4.ap-southeast-1.aws.neon.tech"
+		},
+		"LS_PostgreSql1_properties_typeProperties_database": {
+			"value": "neondb"
+		},
+		"LS_PostgreSql1_properties_typeProperties_username": {
+			"value": "neondb_owner"
+		},
+		"LS_azurekeyvault_properties_typeProperties_baseUrl": {
+			"value": "https://caresync0257-keyvault.vault.azure.net/"
+		},
+		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"value": "0930-024655-19hlz923"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
