@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"insurance_provider": {
+			"insurance_providers": {
 				"type": "string"
 			},
 			"container": {
@@ -19,7 +19,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"folderPath": {
-					"value": "@dataset().insurance_provider",
+					"value": "@dataset().insurance_providers",
 					"type": "Expression"
 				},
 				"fileSystem": {
