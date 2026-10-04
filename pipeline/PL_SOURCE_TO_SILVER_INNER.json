@@ -444,7 +444,7 @@
 											"type": "DatasetReference",
 											"parameters": {
 												"folder": {
-													"value": "SELECT * \nFROM PUBLIC.@{activity('Read table Details').output.firstRow.source_table_name}\n@{\n    if(\n        equals(\n            activity('Read table Details').output.firstRow.load_type,\n            'FULL'\n        ),\n        '',\n        concat(\n            'WHERE ',\n            activity('Read table Details').output.firstRow.watermark_column,\n            ' > ',\n            '''',\n            variables('watermark_value'),\n            ''''\n        )\n    )\n}",
+													"value": "@concat(\n    activity('Read table Details').output.firstRow.source_system,\n    '/',\n    activity('Read table Details').output.firstRow.source_table_name,\n    '/',\n    variables('start time')\n\n)",
 													"type": "Expression"
 												},
 												"container": "landing"
