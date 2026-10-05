@@ -1003,6 +1003,7 @@
 				"activities": [
 					{
 						"name": "Copy data1",
+						"description": "testing ci/cd process",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
