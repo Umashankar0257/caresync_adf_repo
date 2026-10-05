@@ -138,6 +138,9 @@
 								"notebookPath": {
 									"value": "/caresync-repo/caresync-adb-repo/Gold/NB_@{item().gold_table_name}",
 									"type": "Expression"
+								},
+								"baseParameters": {
+									"source_file_format": "a9"
 								}
 							},
 							"linkedServiceName": {
