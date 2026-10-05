@@ -149,7 +149,7 @@
 				"typeProperties": {
 					"variableName": "logic_apps_body",
 					"value": {
-						"value": "{\n\"subject\" : \"@{variables('email_subject')}\",\n\"email_receipients\":\"@{pipeline().globalParameters.email_receipients}\",\n\"body_header\":\"@{variables('body header')}\",\n\"body_footer\":\"@{variables('body_footer')}\",\n\"status_table\":activity('Read all tables status').output.value\n\n}",
+						"value": "{\n\"subject\" : \"@{variables('email_subject')}\",\n\"email_receipients\":\"@{pipeline().globalParameters.email_receipients}\",\n\"body_header\":\"@{variables('body header')}\",\n\"body_footer\":\"@{variables('body_footer')}\",\n\"status_table\":@{activity('Read all tables status').output.value}\n\n}",
 						"type": "Expression"
 					}
 				}
@@ -158,7 +158,7 @@
 		"parameters": {
 			"adf_run_id": {
 				"type": "string",
-				"defaultValue": "abc3b3d4-eede-4925-80f5-fe8cf2299401"
+				"defaultValue": "8cfe6ef2-7e79-4654-9a48-acececdb832d"
 			}
 		},
 		"variables": {
