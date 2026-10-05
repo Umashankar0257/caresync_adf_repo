@@ -41,8 +41,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "body header",
-					"value": "Ingestion in transformation for caresync project as been completed"
+					"variableName": "body_header",
+					"value": "ingestion and transformation has been done from caresync project"
 				}
 			},
 			{
@@ -109,7 +109,7 @@
 						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
 					},
-					"firstRowOnly": false
+					"firstRowOnly": true
 				}
 			},
 			{
@@ -192,7 +192,7 @@
 		"parameters": {
 			"adf_run_id": {
 				"type": "string",
-				"defaultValue": "8cfe6ef2-7e79-4654-9a48-acececdb832d"
+				"defaultValue": "abc3b3d4-eede-4925-80f5-fe8cf2299401"
 			}
 		},
 		"variables": {
@@ -206,6 +206,9 @@
 				"type": "String"
 			},
 			"body_footer": {
+				"type": "String"
+			},
+			"body_header": {
 				"type": "String"
 			}
 		},
