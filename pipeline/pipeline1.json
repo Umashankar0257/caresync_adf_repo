@@ -4,7 +4,7 @@
 		"activities": [
 			{
 				"name": "Copy data1",
-				"description": "testing ci/cd process testing",
+				"description": "testing ci/cd process testing done",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
