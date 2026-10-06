@@ -1622,6 +1622,44 @@
 				"[concat(variables('factoryId'), '/pipelines/PL_SILVER_TO_GOLD')]",
 				"[concat(variables('factoryId'), '/pipelines/PL_SEND_EMAIL')]"
 			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/TGR-CARESYNC')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "PL_MASTER",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Day",
+						"interval": 1,
+						"startTime": "2026-10-06T02:30:00",
+						"timeZone": "India Standard Time",
+						"schedule": {
+							"minutes": [
+								30
+							],
+							"hours": [
+								4
+							]
+						}
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/PL_MASTER')]"
+			]
 		}
 	]
 }
